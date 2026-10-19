@@ -1,0 +1,37 @@
+# Credenciales (NUNCA las subas al repositorio)
+token.json
+client_secrets.json
+client_secret_*.json
+instagram_credentials.json
+instagram_token.json
+.env
+*.pem
+
+# Salida y temporales
+output/
+logs/
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.ass
+*.srt
+
+# Media de ejemplo (sustitúyela por la tuya; la de ejemplo sí se versiona
+# para que el dry-run funcione nada más clonar)
+assets/*
+!assets/.gitkeep
+!assets/ejemplo.mp4
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Sistema
+.DS_Store
+Thumbs.db

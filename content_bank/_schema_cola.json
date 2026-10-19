@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Estado del autopilot",
+  "type": "object",
+  "required": ["estado"],
+  "properties": {
+    "estado": {
+      "type": "string",
+      "enum": ["pendiente", "publicado", "fallido"],
+      "description": "Estado del tema en la cola"
+    },
+    "tema": { "type": "object", "description": "Copia completa del objeto tema" },
+    "youtube_id": { "type": "string" },
+    "youtube_url": { "type": "string" },
+    "instagram_id": { "type": "string" },
+    "instagram_url": { "type": "string" },
+    "instagram_story_id": { "type": "string" },
+    "publicado_en": { "type": "string", "description": "ISO timestamp" },
+    "intentos": { "type": "integer" },
+    "ultimo_error": { "type": "string" }
+  }
+}

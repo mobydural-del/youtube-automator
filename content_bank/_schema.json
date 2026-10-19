@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tema (topic)",
+  "description": "Un vídeo/short por objeto. Coloca uno o varios en cualquier JSON dentro de content_bank/",
+  "type": "object",
+  "required": ["id", "titulo", "source"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador único, en minúsculas y sin espacios (ej: curiosidad-copas-01)"
+    },
+    "titulo": {
+      "type": "string",
+      "description": "Título del tema (se usa en el nombre del vídeo y metadatos)"
+    },
+    "categoria": {
+      "type": "string",
+      "description": "Categoría o serie temática (aparece en descripción y hashtags)"
+    },
+    "source": {
+      "type": "object",
+      "description": "Fuente del vídeo de entrada",
+      "required": ["tipo"],
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["local", "url", "busqueda"],
+          "description": "local=ruta a archivo; url=enlace directo; busqueda=búsqueda para yt-dlp"
+        },
+        "valor": {
+          "type": "string",
+          "description": "Ruta local, URL o término de búsqueda según el tipo"
+        },
+        "offset_segundos": {
+          "type": "number",
+          "description": "Segundo del que empieza a cortar el clip (por defecto 0)"
+        }
+      }
+    },
+    "hook": {
+      "type": "string",
+      "description": "Frase de enganche (0-5s). Si el motor es LLM y está vacío, se genera"
+    },
+    "desarrollo": {
+      "type": "string",
+      "description": "Cuerpo del guion (5-25s)"
+    },
+    "datos": {
+      "type": "string",
+      "description": "Curiosidad o dato final (25-35s)"
+    },
+    "cta": {
+      "type": "string",
+      "description": "Llamada a la acción final (comentarios, seguir...)"
+    },
+    "titulo_youtube": {
+      "type": "string",
+      "description": "Título para YouTube (opcional; si falta se usa titulo + plantilla)"
+    },
+    "descripcion_youtube": {
+      "type": "string",
+      "description": "Descripción completa para YouTube (opcional; si falta se arma por plantilla)"
+    },
+    "hashtags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Hashtags extra para Instagram/YouTube (sin la # inicial)"
+    }
+  }
+}

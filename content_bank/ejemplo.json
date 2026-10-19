@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ejemplo-cielo-01",
+    "titulo": "El color del cielo",
+    "categoria": "Curiosidades de la naturaleza",
+    "source": {
+      "tipo": "local",
+      "valor": "assets/ejemplo.mp4",
+      "offset_segundos": 0
+    },
+    "hook": "¿Alguna vez te has preguntado por qué el cielo es azul?",
+    "desarrollo": "No es porque refleje el mar, como mucha gente cree. La luz del sol se dispersa al atravesar la atmósfera, y el color azul es el que más se dispersa de todos.",
+    "datos": "Por eso, al atardecer, cuando la luz recorre mucho más aire, solo llegan los rojos y naranjas hasta tus ojos.",
+    "cta": "¿Sabías esto? Cuéntame en los comentarios otro dato que te sorprenda del cielo.",
+    "hashtags": ["curiosidades", "ciencia", "naturaleza"]
+  },
+  {
+    "id": "ejemplo-cielo-02",
+    "titulo": "La altura de las olas",
+    "categoria": "Curiosidades de la naturaleza",
+    "source": {
+      "tipo": "busqueda",
+      "valor": "ocean waves slow motion no copyright",
+      "offset_segundos": 3
+    },
+    "hook": "Las olas del océano pueden medir más que un rascacielos.",
+    "desarrollo": "Las olas más altas jamás registradas superaron los treinta metros, más que un edificio de diez plantas. Se forman cuando el viento sopla durante días sin parar sobre una misma zona del mar.",
+    "datos": "Y sin embargo, cuando llegan a la playa, apenas son una espuma suave que sube por la arena.",
+    "cta": "¿Te da paz o miedo el mar profundo? Déjamelo en comentarios."
+  }
+]

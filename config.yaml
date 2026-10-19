@@ -1,0 +1,59 @@
+# ============================================================
+# youtube-automator - Configuración del proyecto
+# Edita este archivo con `python3 setup_wizard.py` o a mano.
+# ============================================================
+
+canal:
+  nombre: "Mi Canal de Shorts"
+  idioma: "es"            # código de idioma para filtrar voces (es, en, fr...)
+  voz: "es-ES-ElviraNeural"  # ver lista completa: edge-tts --list-voices
+  tasa_voz: "+0%"         # velocidad de habla, ej: "+10%"
+
+video:
+  ancho: 1080
+  alto: 1920
+  fps: 30
+  duracion_objetivo: 40   # segundos aproximados por short (limita el clip de entrada)
+
+  # Layout: "completo" (vídeo a sangre) o "franjas" (cabecera + vídeo + subtítulos)
+  layout: "completo"
+  cabecera_altura: 460    # solo layout "franjas"
+  cabecera_imagen: ""     # ruta a imagen de cabecera (opcional, se genera una por defecto)
+
+  # Subtítulos karaoke
+  subtitulos:
+    activos: true
+    tamaño: 68
+    palabras_por_pantalla: 4
+    color_principal: "&H00FFFFFF"   # blanco
+    color_activo: "&H0000FFFF"      # amarillo
+    color_borde: "&H00000000"
+    margen_inferior: 250
+
+audio:
+  voz_volumen: 1.0
+  fondo_volumen: 0.25     # volumen del audio original del clip de entrada
+  sfx_intro: ""           # ruta a efecto de sonido inicial (opcional)
+
+guion:
+  motor: "plantilla"      # "plantilla" o "llm"
+  llm:
+    proveedor: "gemini"   # "gemini" u "openai"
+    modelo: "gemini-2.0-flash"
+    # La API key NUNCA se guarda aquí: usa la variable de entorno GEMINI_API_KEY u OPENAI_API_KEY
+
+publicacion:
+  youtube:
+    activo: true
+    privacidad: "public"  # public | unlisted | private
+    categoria_id: "24"    # 24 = People & Blogs (ver lista en docs)
+    etiquetas_base: ["Shorts"]
+  instagram:
+    activo: true
+    reels: true
+    stories: true
+    hashtags: ["shorts", "viral", "fyp"]
+
+autopilot:
+  videos_por_ejecucion: 1
+  notificar_issue: true   # crea un Issue de GitHub con cada publicación (opcional)
