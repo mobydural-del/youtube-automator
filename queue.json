@@ -14,7 +14,10 @@
       "desarrollo": "Las olas más altas jamás registradas superaron los treinta metros, más que un edificio de diez plantas. Se forman cuando el viento sopla durante días sin parar sobre una misma zona del mar.",
       "datos": "Y sin embargo, cuando llegan a la playa, apenas son una espuma suave que sube por la arena.",
       "cta": "¿Te da paz o miedo el mar profundo? Déjamelo en comentarios."
-    }
+    },
+    "intentos": 1,
+    "ultimo_error": "ERROR: [youtube] MuiJ5h2SJGI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+    "last_attempt": "2026-10-19T18:42:53.486888+00:00"
   },
   {
     "estado": "pendiente",
@@ -36,6 +39,9 @@
         "ciencia",
         "naturaleza"
       ]
-    }
+    },
+    "intentos": 1,
+    "ultimo_error": "Falta un token de YouTube válido en /home/runner/work/youtube-automator/youtube-automator/token.json.\nEjecuta `python3 auth_youtube.py` en local para autorizar tu canal.",
+    "last_attempt": "2026-10-19T18:42:59.252212+00:00"
   }
 ]
