@@ -1,6 +1,6 @@
 [
   {
-    "estado": "pendiente",
+    "estado": "fallido",
     "tema": {
       "id": "ejemplo-cielo-02",
       "titulo": "La altura de las olas",
@@ -15,12 +15,12 @@
       "datos": "Y sin embargo, cuando llegan a la playa, apenas son una espuma suave que sube por la arena.",
       "cta": "¿Te da paz o miedo el mar profundo? Déjamelo en comentarios."
     },
-    "intentos": 2,
-    "ultimo_error": "ERROR: [youtube] MuiJ5h2SJGI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
-    "last_attempt": "2026-10-19T22:19:37.748402+00:00"
+    "intentos": 3,
+    "ultimo_error": "ERROR: [youtube] Rt3goAjCaSM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+    "last_attempt": "2026-10-20T16:57:39.605924+00:00"
   },
   {
-    "estado": "pendiente",
+    "estado": "fallido",
     "tema": {
       "id": "ejemplo-cielo-01",
       "titulo": "El color del cielo",
@@ -40,8 +40,8 @@
         "naturaleza"
       ]
     },
-    "intentos": 2,
+    "intentos": 3,
     "ultimo_error": "Falta un token de YouTube válido en /home/runner/work/youtube-automator/youtube-automator/token.json.\nEjecuta `python3 auth_youtube.py` en local para autorizar tu canal.",
-    "last_attempt": "2026-10-19T22:19:46.152562+00:00"
+    "last_attempt": "2026-10-20T16:57:47.281346+00:00"
   }
 ]
